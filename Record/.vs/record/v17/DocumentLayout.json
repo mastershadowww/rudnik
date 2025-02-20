@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vukku\\Desktop\\samp\\record\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{85998F56-BE23-4604-A58E-604AB7A6B5CD}|record\\record.vcxproj|C:\\Users\\vukku\\Desktop\\samp\\record\\record\\record.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{85998F56-BE23-4604-A58E-604AB7A6B5CD}|record\\record.vcxproj|solutionrelative:record\\record.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "record.cpp",
+              "DocumentMoniker": "C:\\Users\\vukku\\Desktop\\samp\\record\\record\\record.cpp",
+              "RelativeDocumentMoniker": "record\\record.cpp",
+              "ToolTip": "C:\\Users\\vukku\\Desktop\\samp\\record\\record\\record.cpp",
+              "RelativeToolTip": "record\\record.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-20T20:26:32.586Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

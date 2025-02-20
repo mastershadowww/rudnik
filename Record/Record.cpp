@@ -10,7 +10,8 @@
 
 using namespace std;
 
-struct KeyEvent {
+struct KeyEvent
+{
     int key;
     bool pressed;
     DWORD time;
@@ -20,12 +21,16 @@ vector<KeyEvent> recordedKeys;
 bool recording = true;
 map<int, bool> keyStates;
 
-void recordKeys() {
+void recordKeys()
+{
     DWORD startTime = GetTickCount();
-    while (recording) {
-        for (int key = 8; key <= 190; key++) {
+    while (recording)
+    {
+        for (int key = 8; key <= 190; key++)
+        {
             bool isPressed = GetAsyncKeyState(key) & 0x8000;
-            if (isPressed != keyStates[key]) {
+            if (isPressed != keyStates[key])
+            {
                 recordedKeys.push_back({ key, isPressed, GetTickCount() - startTime });
                 keyStates[key] = isPressed;
                 cout << "Snimljen taster: " << key << (isPressed ? " pritisnut" : " pušten") << endl;
@@ -39,11 +44,13 @@ void recordKeys() {
     file.close();
 }
 
-void playKeys() {
+void playKeys()
+{
     vector<KeyEvent> loadedKeys;
     ifstream file("keys.log", ios::binary);
 
-    if (!file.is_open()) {
+    if (!file.is_open())
+    {
         cerr << "Nije pronađen snimak tastera!" << endl;
         return;
     }
@@ -57,7 +64,8 @@ void playKeys() {
 
     cout << "Pokretanje snimljenih tastera..." << endl;
     DWORD lastTime = GetTickCount();
-    for (const auto& event : loadedKeys) {
+    for (const auto& event : loadedKeys)
+    {
         DWORD currentTime = GetTickCount();
         Sleep(event.time - (currentTime - lastTime));
         lastTime = GetTickCount();
@@ -67,7 +75,8 @@ void playKeys() {
     }
 }
 
-int main() {
+int main()
+{
     cout << "Pritisnite ENTER da počnete snimanje..." << endl;
     cin.get();
     thread recorder(recordKeys);

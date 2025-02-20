@@ -9,17 +9,20 @@
 
 using namespace std;
 
-struct KeyEvent {
+struct KeyEvent
+{
     int key;
     bool pressed;
     DWORD time;
 };
 
-void playKeys() {
+void playKeys()
+{
     vector<KeyEvent> loadedKeys;
     ifstream file("keys.log", ios::binary);
 
-    if (!file.is_open()) {
+    if (!file.is_open())
+    {
         cerr << "Nije pronađen snimak tastera!" << endl;
         return;
     }
@@ -33,10 +36,10 @@ void playKeys() {
 
     cout << "Pokretanje snimljenih tastera..." << endl;
     DWORD startTime = GetTickCount();
-    for (const auto& event : loadedKeys) {
-        while (GetTickCount() - startTime < event.time) {
+    for (const auto& event : loadedKeys)
+    {
+        while (GetTickCount() - startTime < event.time)
             Sleep(1);
-        }
 
         INPUT input = { 0 };
         input.type = INPUT_KEYBOARD;
@@ -48,7 +51,8 @@ void playKeys() {
     }
 }
 
-int main() {
+int main()
+{
     cout << "Pritisnite ENTER za pokretanje snimljenih tastera..." << endl;
     cin.get();
     playKeys();

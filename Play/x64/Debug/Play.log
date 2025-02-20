@@ -1,3 +1,4 @@
 ﻿  Play.cpp
-C:\Users\vukku\source\repos\Rudnik\Play\Play.cpp(23,17): warning C4566: character represented by universal-character-name '\u0111' cannot be represented in the current code page (1252)
-  Play.vcxproj -> C:\Users\vukku\source\repos\Rudnik\x64\Debug\Play.exe
+C:\Users\vukku\Desktop\samp\play\Play.cpp(26,17): warning C4566: character represented by universal-character-name '\u0111' cannot be represented in the current code page (1252)
+  LINK : C:\Users\vukku\Desktop\samp\x64\Debug\Play.exe not found or not built by the last incremental link; performing full link
+  Play.vcxproj -> C:\Users\vukku\Desktop\samp\x64\Debug\Play.exe

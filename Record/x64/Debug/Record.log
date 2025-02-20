@@ -1,0 +1,4 @@
+﻿  Record.cpp
+C:\Users\vukku\source\repos\Rudnik\Record\Record.cpp(47,17): warning C4566: character represented by universal-character-name '\u0111' cannot be represented in the current code page (1252)
+C:\Users\vukku\source\repos\Rudnik\Record\Record.cpp(71,13): warning C4566: character represented by universal-character-name '\u010D' cannot be represented in the current code page (1252)
+  Record.vcxproj -> C:\Users\vukku\source\repos\Rudnik\x64\Debug\Record.exe

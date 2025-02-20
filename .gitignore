@@ -1,0 +1,74 @@
+# Ignoriši sve hidden fajlove i foldere (Windows i macOS)
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+System Volume Information/
+*.tmp
+*.log
+
+# Visual Studio build fajlovi
+.vs/
+*.suo
+*.user
+*.cache
+*.pdb
+*.ilk
+*.obj
+*.idb
+*.ipch
+*.aps
+*.pch
+*.res
+*.ncb
+*.sdf
+*.opendb
+*.VC.db
+
+# Ignoriši Debug i Release foldere
+Debug/
+Release/
+x64/
+x86/
+ARM/
+ARM64/
+bin/
+obj/
+
+# Git ignorisanje za NuGet pakete
+packages/
+*.nupkg
+project.lock.json
+project.assets.json
+
+# C++ build fajlovi
+*.o
+*.a
+*.lib
+*.exp
+*.exe
+*.dll
+*.so
+*.dylib
+
+# CMake build foldere
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+CTestTestfile.cmake
+Makefile
+cmake_install.cmake
+
+# Python privremeni fajlovi (ako koristiš Python)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# JetBrains IDE fajlovi (CLion, Rider, WebStorm, PyCharm)
+.idea/
+*.iml
+
+# Ignore Git LFS lock files
+*.lfs.lock

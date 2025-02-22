@@ -1,5 +1,0 @@
-﻿  Record.cpp
-C:\Users\vukku\Desktop\samp\Record\Record.cpp(54,17): warning C4566: character represented by universal-character-name '\u0111' cannot be represented in the current code page (1252)
-C:\Users\vukku\Desktop\samp\Record\Record.cpp(80,13): warning C4566: character represented by universal-character-name '\u010D' cannot be represented in the current code page (1252)
-  LINK : C:\Users\vukku\Desktop\samp\x64\Debug\Record.exe not found or not built by the last incremental link; performing full link
-  Record.vcxproj -> C:\Users\vukku\Desktop\samp\x64\Debug\Record.exe

@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\vukku\\Desktop\\samp\\",
+  "WorkspaceRootPath": "C:\\Users\\lazar\\Desktop\\shadowww\\rudnik\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{74E658ED-16E2-4915-A507-624EA7AD2E98}|Play\\Play.vcxproj|C:\\Users\\vukku\\Desktop\\samp\\Play\\Play.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lazar\\Desktop\\shadowww\\rudnik\\Record\\Record.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Record\\Record.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74E658ED-16E2-4915-A507-624EA7AD2E98}|Play\\Play.vcxproj|C:\\Users\\lazar\\Desktop\\shadowww\\rudnik\\Play\\Play.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{74E658ED-16E2-4915-A507-624EA7AD2E98}|Play\\Play.vcxproj|solutionrelative:Play\\Play.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D60AA68D-9DAF-450B-90E9-0456460279AB}|Screenshot\\Screenshot.pyproj|C:\\Users\\vukku\\Desktop\\samp\\Screenshot\\Screenshot.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{D60AA68D-9DAF-450B-90E9-0456460279AB}|Screenshot\\Screenshot.pyproj|C:\\Users\\lazar\\Desktop\\shadowww\\rudnik\\Screenshot\\Screenshot.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{D60AA68D-9DAF-450B-90E9-0456460279AB}|Screenshot\\Screenshot.pyproj|solutionrelative:Screenshot\\Screenshot.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE0CC9E7-8F54-4817-AA2B-0ACDD86F524F}|Record\\Record.vcxproj|C:\\Users\\vukku\\Desktop\\samp\\Record\\Record.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AE0CC9E7-8F54-4817-AA2B-0ACDD86F524F}|Record\\Record.vcxproj|solutionrelative:Record\\Record.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +22,42 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Screenshot.py",
-              "DocumentMoniker": "C:\\Users\\vukku\\Desktop\\samp\\Screenshot\\Screenshot.py",
-              "RelativeDocumentMoniker": "Screenshot\\Screenshot.py",
-              "ToolTip": "C:\\Users\\vukku\\Desktop\\samp\\Screenshot\\Screenshot.py",
-              "RelativeToolTip": "Screenshot\\Screenshot.py",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAxAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHfSURBVDhPpZCxaxNhGMZ/9zVJaUuDUlq1FBWLZBFTCXo4BFyU1qGKi4OkIHhkzF/g0KF00M2lR9YUdDDQQVAcJILoQUd1UNRmkhoRm8RL777v7nOoCZd4AcEH3uF5nvd73vd74X\u002BgtTai3LIsHeWDEEJct217a1DvwbIs7bpubFUqFW3b9naxWLwWfSOipAvHcfqqi0KhkMtms3cty1rsaomeG4FpmoMSANVqlXQ6nQMWgacMC4hOBchduEj\u002ByjKjScGh8SS1Wq3nxQZEN3j1eY/Vrfe8rTeQvsf89ARLS1cz5XIZ/uUGXxptQiVRUhJIybudXaZn52a7vbEBpmkyNb/A69YM9W8tDEJOTI2hpI\u002BSkvOZH2f13sNAB\u002B07sV9wHIdH9Unquz9RvoeUPtL3UFISKkky\u002BAT7HwTi6FpsgGma3N9\u002Bg5I\u002BKaFZyU8wOpJChwHnjiuE9wKCXyC/zsQGOI7DeELjtiUPbgky6Wd/HA3KBelC4AIpNfQGl88cQ0mfI5PugRhKkM2DUk0INYwtPI/dAGAlf4rbl06T6DyBVgeCABJzYPhwcm0V8ICNvwJKpVIf37h3IxSyKVAuBMDIYQAMw1jvaxwGrYNl3Xq5o79vat3Y3Nedj4\u002B11je7/m\u002BXOuyzFtDhUgAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-02-20T20:35:19.404Z",
+              "DocumentIndex": 0,
+              "Title": "Record.cpp",
+              "DocumentMoniker": "C:\\Users\\lazar\\Desktop\\shadowww\\rudnik\\Record\\Record.cpp",
+              "RelativeDocumentMoniker": "Record\\Record.cpp",
+              "ToolTip": "C:\\Users\\lazar\\Desktop\\shadowww\\rudnik\\Record\\Record.cpp",
+              "RelativeToolTip": "Record\\Record.cpp",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-22T16:26:58.829Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Record.cpp",
-              "DocumentMoniker": "C:\\Users\\vukku\\Desktop\\samp\\Record\\Record.cpp",
-              "RelativeDocumentMoniker": "Record\\Record.cpp",
-              "ToolTip": "C:\\Users\\vukku\\Desktop\\samp\\Record\\Record.cpp",
-              "RelativeToolTip": "Record\\Record.cpp",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-20T20:27:29.614Z",
-              "EditorCaption": ""
+              "Title": "Screenshot.py",
+              "DocumentMoniker": "C:\\Users\\lazar\\Desktop\\shadowww\\rudnik\\Screenshot\\Screenshot.py",
+              "RelativeDocumentMoniker": "Screenshot\\Screenshot.py",
+              "ToolTip": "C:\\Users\\lazar\\Desktop\\shadowww\\rudnik\\Screenshot\\Screenshot.py",
+              "RelativeToolTip": "Screenshot\\Screenshot.py",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAQAAAAJAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHeSURBVDhPpVMxa1NRFP7ebZLSlgaltNpSVCySRUxL0NAh4FJpHWpxcZAUBEPG/AKHDsVBN5eGrCnoYKCDoDiUCKKBjtZBUZtJ2ojYJr40ue\u002B\u002B47k3VzD0hQr94OOed8853/k47z2cCETk2NAgk8mQDQMhhFjK5/Mb9vEotIDruoEsFovEzVvZbPaWLTcQ9uxCpVLp4l\u002Bk0\u002BlEPB5/wIPm7RVC9uxCMpm0UTdKpRKi0WiCQy3wUt8FCvw7VSNxbRapG4voDwucGgyjXC7bzH84ePt1HysbH/GhWoNstzA1OoSFhZuxQqFg8sfu4FutAd\u002BT8KSEYm7v7GJ0YnLClgYLaAcjU9N4Vx9Dda8OBz7OjwywSNsIXY39vEL7TxWpxv2eO3hWHUZ19xc8ti25UdvXzdpNWH0BDj8JiLOrPXfweOu9mRgRhOXUEPr7IiBfYeacB9HaBNRvQH4f6\u002BlgMERwGxJP7grEoq9shj9Uz\u002BVGpmIi4vXcwdzlcePgzLAuZPiSGw869Jg\u002Biw1Mvw50oLGcuoh71y8h1HwB1Js8UfFLnwScNnBhdYVLWsy1IwK5XM5GHaw9uu0LeSCMddZA32lz7zjOQxMcByK1SPU3O/Rjnai2fkjNz8/5L77TyQJ/AJc67LNf3QeWAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-02-20T20:35:19.404Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Play.cpp",
-              "DocumentMoniker": "C:\\Users\\vukku\\Desktop\\samp\\play\\Play.cpp",
-              "RelativeDocumentMoniker": "play\\Play.cpp",
-              "ToolTip": "C:\\Users\\vukku\\Desktop\\samp\\play\\Play.cpp",
-              "RelativeToolTip": "play\\Play.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAACAAAA",
+              "DocumentMoniker": "C:\\Users\\lazar\\Desktop\\shadowww\\rudnik\\Play\\Play.cpp",
+              "RelativeDocumentMoniker": "Play\\Play.cpp",
+              "ToolTip": "C:\\Users\\lazar\\Desktop\\shadowww\\rudnik\\Play\\Play.cpp",
+              "RelativeToolTip": "Play\\Play.cpp",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAcwI8AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-20T20:24:11.666Z",
               "EditorCaption": ""

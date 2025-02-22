@@ -1,28 +1,74 @@
-﻿// Play.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
-#include <iostream>
-
-#include <fstream>
+﻿#include <iostream>
 #include <windows.h>
+#include <string>
+#include <cstdlib>
+#include <fstream>
 #include <vector>
 
 using namespace std;
 
-struct KeyEvent
-{
+struct KeyEvent {
     int key;
     bool pressed;
     DWORD time;
 };
 
-void playKeys()
-{
+void typeText(const string& text) {
+    for (char c : text) {
+        SHORT vk = VkKeyScan(c);
+        keybd_event(vk, 0, 0, 0);
+        keybd_event(vk, 0, KEYEVENTF_KEYUP, 0);
+        Sleep(50);
+    }
+}
+
+void pressEnter() {
+    keybd_event(VK_RETURN, 0, 0, 0);
+    keybd_event(VK_RETURN, 0, KEYEVENTF_KEYUP, 0);
+}
+
+bool getCode(string& code) {
+    FILE* pipe = _popen("python C:\\Users\\lazar\\Desktop\\shadowww\\rudnik\\screenshot\\screenshot.py", "r");
+    if (!pipe) return false;
+
+    char buffer[128];
+    string result = "";
+
+    while (fgets(buffer, sizeof(buffer), pipe) != NULL) {
+        result += buffer;
+    }
+    _pclose(pipe);
+
+    if (result.find("None") != string::npos) {
+        return false;
+    }
+
+    code = result.substr(0, 3);
+    return true;
+}
+
+void moveMouseDown() {
+    INPUT input = { 0 };
+    input.type = INPUT_MOUSE;
+    input.mi.dx = 0;
+    input.mi.dy = 50;
+    input.mi.mouseData = 0;
+    input.mi.dwFlags = MOUSEEVENTF_MOVE;
+    input.mi.time = 0;
+    input.mi.dwExtraInfo = 0;
+
+    for (int i = 0; i < 3000; i += 50)
+    {
+        SendInput(1, &input, sizeof(INPUT));
+        Sleep(5);
+    }
+}
+
+void playKeys() {
     vector<KeyEvent> loadedKeys;
     ifstream file("keys.log", ios::binary);
 
-    if (!file.is_open())
-    {
+    if (!file.is_open()) {
         cerr << "Nije pronađen snimak tastera!" << endl;
         return;
     }
@@ -36,37 +82,71 @@ void playKeys()
 
     cout << "Pokretanje snimljenih tastera..." << endl;
     DWORD startTime = GetTickCount();
-    for (const auto& event : loadedKeys)
-    {
+    for (const auto& event : loadedKeys) {
         while (GetTickCount() - startTime < event.time)
             Sleep(1);
 
-        INPUT input = { 0 };
-        input.type = INPUT_KEYBOARD;
-        input.ki.wVk = event.key;
-        input.ki.dwFlags = event.pressed ? 0 : KEYEVENTF_KEYUP;
-        SendInput(1, &input, sizeof(INPUT));
+        if (event.key == VK_MULTIPLY && event.pressed) {
+            moveMouseDown();
+        }
+        else {
+            INPUT input = { 0 };
+            input.type = INPUT_KEYBOARD;
+            input.ki.wVk = event.key;
+            input.ki.dwFlags = event.pressed ? 0 : KEYEVENTF_KEYUP;
+            SendInput(1, &input, sizeof(INPUT));
 
-        cout << "Taster: " << event.key << (event.pressed ? " pritisnut" : " pušten") << endl;
+            cout << "Taster: " << event.key << (event.pressed ? " pritisnut" : " pušten") << endl;
+        }
     }
 }
 
-int main()
-{
-    cout << "Pritisnite ENTER za pokretanje snimljenih tastera..." << endl;
-    cin.get();
-    playKeys();
+int main() {
+    int cycleCount = 0;
+    int failCount = 0;
+
+    while (true) {
+        string code;
+
+        while (true) {
+            typeText("t/rudnik");
+            pressEnter();
+            Sleep(2000);
+
+            if (getCode(code)) {
+                failCount = 0;
+                typeText(code);
+                pressEnter();
+                cout << "Unet kod: " << code << endl;
+                break;
+            }
+            else {
+                failCount++;
+                cout << "Kod nije pronadjen, ponavljamo pokusaj..." << endl;
+                if (failCount >= 6) {
+                    cout << "Previše neuspelih pokušaja, prekidam skriptu..." << endl;
+                    return 1;
+                }
+                Sleep(2000);
+            }
+        }
+
+        Sleep(2000);
+        playKeys();
+
+        cycleCount++;
+        cout << "Zavrsen ciklus broj: " << cycleCount << endl;
+
+        if (cycleCount % 10 == 0) {
+            cout << "Izvrsavam komandu t/sendvic nakon 10 ciklusa..." << endl;
+            typeText("t/sendvic");
+            pressEnter();
+            Sleep(2000);
+        }
+
+        cout << "Započinjem novi ciklus..." << endl;
+        Sleep(2000);
+    }
+
     return 0;
 }
-
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

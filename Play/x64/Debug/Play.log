@@ -1,4 +1,6 @@
 ﻿  Play.cpp
-C:\Users\vukku\Desktop\samp\play\Play.cpp(26,17): warning C4566: character represented by universal-character-name '\u0111' cannot be represented in the current code page (1252)
-  LINK : C:\Users\vukku\Desktop\samp\x64\Debug\Play.exe not found or not built by the last incremental link; performing full link
-  Play.vcxproj -> C:\Users\vukku\Desktop\samp\x64\Debug\Play.exe
+C:\Users\lazar\Desktop\shadowww\rudnik\Play\Play.cpp(19,21): warning C4244: 'argument': conversion from 'SHORT' to 'BYTE', possible loss of data
+C:\Users\lazar\Desktop\shadowww\rudnik\Play\Play.cpp(20,21): warning C4244: 'argument': conversion from 'SHORT' to 'BYTE', possible loss of data
+C:\Users\lazar\Desktop\shadowww\rudnik\Play\Play.cpp(72,17): warning C4566: character represented by universal-character-name '\u0111' cannot be represented in the current code page (1252)
+C:\Users\lazar\Desktop\shadowww\rudnik\Play\Play.cpp(147,17): warning C4566: character represented by universal-character-name '\u010D' cannot be represented in the current code page (1252)
+  Play.vcxproj -> C:\Users\lazar\Desktop\shadowww\rudnik\x64\Debug\Play.exe

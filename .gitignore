@@ -5,7 +5,6 @@ desktop.ini
 $RECYCLE.BIN/
 System Volume Information/
 *.tmp
-*.log
 
 # Visual Studio build fajlovi
 .vs/
